@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Who are you?</h1>
+            <p id="description" class="description text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit architecto.</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Your Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Your Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Your Age <span class="clue">(Are you 18?)</span> </label>
+                <input type="number" name="age" id="number" min="18" max="110" class="form-control" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+               <p>Your Gender</p>
+               <label>
+                   <input type="radio" name="gender" value="male" class="input-radio">
+                   Male
+               </label>
+               <label>
+                <input type="radio" name="gender" value="female" class="input-radio">
+                Female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other" class="input-radio">
+                Other
+            </label>
+            </div>
+           
+            <div class="form-group">
+                <p>Which are you doing right now ?</p>
+                <select name="role" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select Corrent Role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full-time Job</option>
+                    <option value="self">Self-Employed</option>
+                    <option value="jobless">Seeking for a Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <p>Which one is Your Highest Academic Degree?</p>
+                <select name="academic" id="academic" class="form-control" required>
+                    <option disabled selected value>Select Corrent Role</option>
+                    <option value="ssc">SSC</option>
+                    <option value="hsc">HSC</option>
+                    <option value="bsc">Graduate</option>
+                    <option value="msc">Post Graduate</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    Your Skills in Web Dev Field 
+                    <span class="clue">(Check multiple if needed)</span> 
+                </p>
+                <label>
+                    <input type="checkbox" name="skill" value="html" class="input-checkbox">
+                    HTML
+                </label>
+                <label>
+                    <input type="checkbox" name="skill" value="css" class="input-checkbox">
+                    CSS
+                </label>
+                <label>
+                    <input type="checkbox" name="skill" value="bootstrap" class="input-checkbox">
+                    Bootstrap
+                </label>
+                <label>
+                    <input type="checkbox" name="skill" value="javascript" class="input-checkbox">
+                    JavaScript
+                </label>
+                <label>
+                    <input type="checkbox" name="skill" value="nodejs" class="input-checkbox">
+                    Node.JS
+                </label>
+                <label>
+                    <input type="checkbox" name="skill" value="react" class="input-checkbox">
+                    React
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Want To Tell Something More?</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comments here...."></textarea>
+            </div>
+            <div class="form-group">
+               <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+</html>
